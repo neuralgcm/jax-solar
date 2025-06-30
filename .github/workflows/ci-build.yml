@@ -43,4 +43,4 @@ jobs:
         pip install -e .[tests]
     - name: Run unit tests
       run: |
-        pytest -v jax-solar
+        pytest -v jax_solar
