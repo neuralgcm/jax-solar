@@ -27,4 +27,4 @@ from jax_solar._jax_solar import (
     radiation_flux as radiation_flux,
 )
 
-__version__ = "0.1.0"  # keep sync with pyproject.toml
+__version__ = "0.1.1"  # keep sync with pyproject.toml

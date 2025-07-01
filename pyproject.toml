@@ -7,7 +7,7 @@ packages = ["jax_solar"]
 
 [project]
 name = "jax-solar"
-version = "0.1.0"  # keep sync with __init__.py
+version = "0.1.1"  # keep sync with __init__.py
 description = "Top of atmosphere incident solar radiation, in JAX"
 authors = [
     {name = "Google LLC", email = "noreply@google.com"},

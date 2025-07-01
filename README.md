@@ -1,4 +1,4 @@
-# JAX Solar: Top of atmosphere incident solar radiation, in JAX.
+# JAX Solar: Top of atmosphere incident solar radiation, in JAX
 
 Authors: Peter Norgaard and Stephan Hoyer
 
@@ -21,7 +21,7 @@ time = jdt.to_datetime('2024-12-28T00:30')
 lat = 37.7749
 lon = -122.4194
 relative_flux = jax_solar.normalized_radiation_flux(time, lon, lat)
-print(relative_flux)  # Array(0.07284241, dtype=float32, weak_type=True)
+print(relative_flux)  # 0.07284241
 ```
 
 ## How accurate is it?
@@ -62,9 +62,9 @@ relative_error = (tisr_jax_solar - tisr_era5) / tisr_era5.max()
 relative_error.rename('Relative error').plot(size=3, aspect=2)
 ```
 
-![](./tisr_reference.png)
+![](https://github.com/neuralgcm/jax-solar/raw/main/docs/_static/tisr_reference.png)
 
-![](./tisr_error.png)
+![](https://github.com/neuralgcm/jax-solar/raw/main/docs/_static/tisr_error.png)
 
 If 0.5% accuracy is not good enough for you, you could consider using the
 [solar radiation code](https://github.com/google-deepmind/graphcast/blob/6819a0f19796ca9c34a079855339b37134b8d930/graphcast/solar_radiation.py)
