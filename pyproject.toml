@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [project.urls]
-source-code = "https://github.com/neuralgcm/jax-solar"
+source = "https://github.com/neuralgcm/jax-solar"
 
 [project.optional-dependencies]
 tests = [
