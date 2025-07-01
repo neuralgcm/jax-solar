@@ -13,13 +13,16 @@ authors = [
     {name = "Google LLC", email = "noreply@google.com"},
 ]
 readme = "README.md"
-license = {file = "LICENSE"}
+license = "Apache-2.0"
 requires-python = ">=3.11"
 dependencies = [
     "jax",
     "jax-datetime",
     "numpy",
 ]
+
+[project.urls]
+source-code = "https://github.com/neuralgcm/jax-solar"
 
 [project.optional-dependencies]
 tests = [
