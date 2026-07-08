@@ -149,7 +149,7 @@ def direct_solar_irradiance(
       orbit. Default is 0.5 * 6.9% of TSI. Units should match mean_irradiance.
     perihelion: orbital phase in radians where the Earth is closest to the Sun.
   """
-  return mean_irradiance + variation * jnp.cos(orbital_phase - perihelion)
+  return mean_irradiance + variation * jnp.cos(orbital_phase - perihelion)  # pyrefly: ignore[bad-return]
 
 
 def get_declination(orbital_phase: Numeric) -> jnp.ndarray:
@@ -175,7 +175,7 @@ def get_hour_angle(orbital_time: OrbitalTime, longitude: Array) -> jnp.ndarray:
       + equation_of_time(orbital_time.orbital_phase)
       + jnp.deg2rad(longitude)
   )
-  return solar_time - jnp.pi
+  return solar_time - jnp.pi  # pyrefly: ignore[bad-return]
 
 
 def get_solar_sin_altitude(
